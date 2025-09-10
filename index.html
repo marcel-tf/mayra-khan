@@ -10,111 +10,84 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💼</text></svg>">
 </head>
 <body>
+
 <header id="top" class="header">
-  <div class="container nav-row">
-    <a class="brand" href="#home"><span>Mayra</span> Khan</a>
-    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <div class="container header-inner">
+    <div class="topbar">
+      <a class="brand" href="#home"><span>Mayra</span> Khan</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
     <nav class="nav">
       <a href="#home" class="nav-link">Home</a>
       <a href="#about" class="nav-link">About</a>
       <a href="#achievements" class="nav-link">Achievements</a>
       <a href="#services" class="nav-link">Services</a>
+      <a href="#featured" class="nav-link">Featured</a>
       <a href="#contact" class="nav-link cta">Contact</a>
     </nav>
   </div>
 </header>
 
 <main>
-  <!-- HOME / HERO -->
+  <!-- White -->
   <section id="home" class="section hero">
-    <div class="bg-shapes" aria-hidden="true">
-      <span class="blob b1"></span>
-      <span class="blob b2"></span>
-    </div>
-
-    <div class="container hero-grid">
+    <div class="container hero-minimal">
       <div class="hero-copy reveal fade-up">
-        <!-- Banner headline con líneas -->
-        <div class="eyebrow-banner" aria-label="Transforming your">
-          <span>Transforming your</span>
-        </div>
-
-        <h1 class="display">BUSINESS</h1>
-
-        <br>
-        <p class="lead lead-compact">
-          Multiple Award-Winning Entrepreneur&nbsp;| Founder | Woman of Influence 2016 | Minority Board Member | Teamficient CEO
-        </p>
-
-        <!--
-        <div class="actions">
-          <a href="#services" class="btn">Business consultation</a>
-          <a href="#about" class="btn ghost">Meet Mayra</a>
-        </div>
-        -->
+        <p class="eyebrow-mini with-lines">Transforming your</p>
+        <h1 class="display underline-accent">BUSINESS</h1>
+        <br><br>
+        <p class="lead lead-compact">Award-winning entrepreneur. Founder & CEO at Teamficient.</p>
       </div>
-
       <div class="hero-media reveal zoom-in">
-        <img src="assets/mayra-hero.jpg" alt="Portrait of Mayra Khan in blue background">
+        <img src="assets/mayra-hero.jpg" alt="Portrait of Mayra Khan">
       </div>
     </div>
   </section>
 
-  <!-- Wave divider between Home and About -->
-  <div class="wave-sep" aria-hidden="true">
-    <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-      <path d="M0,80 C240,120 480,0 720,40 C960,80 1200,20 1440,60 L1440,120 L0,120 Z"></path>
-    </svg>
-  </div>
-
-  <!-- ABOUT -->
-  <section id="about" class="section about">
+  <!-- Gold -->
+  <section id="about" class="section about gold">
     <div class="container">
-      <!-- Grid 3 columnas -->
-      <div class="about-grid-3">
-        <!-- Col 1: Imagen -->
-        <div class="about-media reveal fade-left">
-          <img class="rounded shadow" src="assets/mayra-desk.jpg" alt="Mayra Khan working at her desk">
+      <div class="rule"></div>
+
+      <!-- Subtítulo + Título unificados -->
+      <p class="eyebrow">Who Am I</p>
+      <h2 class="section-title reveal fade-up">ABOUT ME</h2>
+      <br>
+      <div class="about-split">
+        <!-- Left image -->
+        <div class="about-image reveal fade-left">
+          <img src="assets/mayra-desk.jpg" alt="Mayra Khan working at her desk">
         </div>
 
-        <!-- Col 2: Perfil y Trayectoria -->
-        <div class="about-card reveal fade-up">
-          <h2>About</h2>
-          <p><strong>Mayra Khan</strong> is a dynamic and highly accomplished business leader, recognized for founding and scaling multiple successful companies in the service industry.</p>
-          <p>As the <strong>Founder & CEO of Teamficient</strong>, she brings a legacy of <strong>entrepreneurship</strong>, <strong>operational excellence</strong>, and a deep commitment to <strong>empowering underrepresented communities</strong> in business.</p>
-          <hr class="sep">
-          <h3>Track Record</h3>
-          <p>Over the past <strong>15+ years</strong>, Mayra has built organizations nationally recognized for growth, innovation, and impact — including <strong>Nova Driving School</strong>, <strong>IDrivio</strong>, and <strong>MyDrive Academy</strong>. Her work has made her a respected leader within the entrepreneurial ecosystem, especially among Hispanic-owned businesses.</p>
-        </div>
-
-        <!-- Col 3: Liderazgo & CEO -->
-        <div class="about-card reveal fade-up">
-          <!--<h3>Leadership Beyond Business</h3>
-          <ul class="ticks">
-            <li>Illinois Secretary of State’s Transition Team</li>
-            <li>Board Member: Little Village Chamber of Commerce, Centro Romero, IHCC (2016–2022)</li>
-            <li>Advocate in the Supplier Diversity Capacity Building Program with the USHCC</li>
-          </ul>
-
-          <hr class="sep">-->
-
-          <h3>Teamficient</h3>
-          <p>Award-winning, serial entrepreneur with 15+ years of experience leading three small businesses to become three big successes.</p>
-          <p>After seeing the need for stronger customer service and sales operations in her own companies, Mayra founded <strong>Teamficient</strong> to position virtual assistants as a modern, streamlined solution for administrative excellence. Now, she’s focused on turning her success story into yours.</p>
-          <br>
-          <div class="about-cta">
-            <a href="#contact" class="btn">Work with Mayra</a>
-            <a href="#services" class="btn ghost">Explore services</a>
+        <!-- Right content, 2 columns -->
+        <div class="about-content reveal fade-up">
+          <div class="about-columns">
+            <div>
+              <p><strong>Mayra Khan</strong> builds companies that scale with systems and people.</p>
+              <p>Founder & <strong>CEO of Teamficient</strong>. Focused on execution, service, and inclusive growth.</p>
+              <h3>Track Record</h3>
+              <p><strong>15+ years</strong> leading <strong>Nova Driving School</strong>, <strong>IDrivio</strong>, and <strong>MyDrive Academy</strong>.</p>
+            </div>
+            <div>
+              <h3>Teamficient</h3>
+              <p>Clear playbooks. Effective delegation. Measurable results.</p>
+              <p>Virtual assistants as the operational engine for your growth.</p>
+              <div class="about-cta">
+                <a href="#contact" class="btn about-black">Work with Mayra</a>
+                <a href="#services" class="btn ghost about-black-outline">Explore services</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
-      <!-- Franja inferior: cualidades + frase (fuera de columnas) -->
-       <br><br>
-      <div>
+      <br><br>
+      <!-- Pills below -->
+      <div class="about-bottom">
         <div class="pill-grid pill-grid-center">
           <span class="pill">Entrepreneurship</span>
           <span class="pill">Operational excellence</span>
@@ -122,228 +95,205 @@
           <span class="pill">Supplier diversity</span>
           <span class="pill">Inclusive growth</span>
         </div>
-
         <blockquote class="quote quote-center">
-          “Scale with integrity and impact—build systems that elevate people.”
+          “Scale with integrity and impact.”
         </blockquote>
       </div>
     </div>
   </section>
 
-  <!-- ACHIEVEMENTS -->
+  <!-- White -->
   <section id="achievements" class="section alt">
-  <div class="container">
-    <div class="section-head reveal fade-up">
-      <h2>Achievements</h2>
-      <p>Recognitions for growth, innovation, and impact.</p>
-    </div>
+    <div class="container">
+      <div class="rule"></div>
 
-    <ul class="card-grid">
-      <li class="card reveal fade-up">
-        <h3 class="achv-title"><i class="fa-solid fa-people-group"></i> Latino Leader Award</h3>
-        <p>Los 26 de la 26, Negocios Now & Little Village Chamber of Commerce (2022).</p>
-      </li>
+      <!-- Subtítulo + Título unificados -->
+      <p class="eyebrow">Recognition & Impact</p>
+      <div class="section-head reveal fade-up">
+        <h2>ACHIEVEMENTS</h2>
+        <p>Recognitions for growth and innovation.</p>
+      </div>
 
-      <li class="card reveal fade-up">
-        <h3 class="achv-title"><i class="fa-solid fa-chart-line"></i> Inner City 100 Award</h3>
-        <p>Recognized by Fortune & ICIC as one of the fastest-growing businesses in the U.S. (2016, three consecutive years).</p>
-      </li>
+      <ul class="card-grid">
+        <li class="card reveal fade-up"><h3 class="achv-title"><i class="fa-solid fa-people-group"></i> Latino Leader Award</h3><p>Los 26 de la 26 (2022).</p></li>
+        <li class="card reveal fade-up"><h3 class="achv-title"><i class="fa-solid fa-chart-line"></i> Inner City 100</h3><p>Fortune & ICIC, 3 years.</p></li>
+        <li class="card reveal fade-up"><h3 class="achv-title"><i class="fa-solid fa-newspaper"></i> Fortune Feature</h3><p>Sustained growth.</p></li>
+        <li class="card reveal fade-up"><h3 class="achv-title"><i class="fa-solid fa-graduation-cap"></i> Stanford LEI</h3><p>GSB, 2019.</p></li>
+        <li class="card reveal fade-up"><h3 class="achv-title"><i class="fa-solid fa-award"></i> Enterprising Women</h3><p>Woman of the Year (2017).</p></li>
+        <li class="card reveal fade-up"><h3 class="achv-title"><i class="fa-solid fa-trophy"></i> WBDC</h3><p>Entrepreneur of the Year (2017).</p></li>
+        <li class="card reveal fade-up"><h3 class="achv-title"><i class="fa-solid fa-star"></i> Women of Influence</h3><p>Chicago Business Journal (2016).</p></li>
+        <li class="card reveal fade-up"><h3 class="achv-title"><i class="fa-solid fa-medal"></i> EW Champions</h3><p>2015.</p></li>
+        <li class="card reveal fade-up"><h3 class="achv-title"><i class="fa-solid fa-ranking-star"></i> 40 Under 40</h3><p>Negocios Now (2015).</p></li>
+        <li class="card reveal fade-up"><h3 class="achv-title"><i class="fa-solid fa-trophy"></i> Entrepreneur of the Year</h3><p>WBDC (2015).</p></li>
+        <li class="card reveal fade-up"><h3 class="achv-title"><i class="fa-solid fa-people-roof"></i> Family Business</h3><p>Smart Business Mag (2015).</p></li>
+        <li class="card reveal fade-up"><h3 class="achv-title"><i class="fa-solid fa-briefcase"></i> GS 10K SB</h3><p>Cohort 2014.</p></li>
+      </ul>
 
-      <li class="card reveal fade-up">
-        <h3 class="achv-title"><i class="fa-solid fa-newspaper"></i> Fortune Magazine Feature</h3>
-        <p>Highlighted for sustained growth, overlapping with Inner City 100 recognition.</p>
-      </li>
-
-      <li class="card reveal fade-up">
-        <h3 class="achv-title"><i class="fa-solid fa-graduation-cap"></i> Stanford LEI Alumna</h3>
-        <p>Stanford Latino Entrepreneurship Initiative – GSB (2019).</p>
-      </li>
-
-      <li class="card reveal fade-up">
-        <h3 class="achv-title"><i class="fa-solid fa-award"></i> Enterprising Women – Woman of the Year</h3>
-        <p>Enterprising Women Magazine (2017).</p>
-      </li>
-
-      <li class="card reveal fade-up">
-        <h3 class="achv-title"><i class="fa-solid fa-trophy"></i> WBDC – Entrepreneur of the Year</h3>
-        <p>Women’s Business Development Center (2017).</p>
-      </li>
-
-      <li class="card reveal fade-up">
-        <h3 class="achv-title"><i class="fa-solid fa-star"></i> Women of Influence</h3>
-        <p>Chicago Business Journal (2016).</p>
-      </li>
-
-      <li class="card reveal fade-up">
-        <h3 class="achv-title"><i class="fa-solid fa-medal"></i> Enterprising Women of the Year Champions</h3>
-        <p>Enterprising Women Magazine (2015).</p>
-      </li>
-
-      <li class="card reveal fade-up">
-        <h3 class="achv-title"><i class="fa-solid fa-ranking-star"></i> 40 Under 40 Award</h3>
-        <p>Negocios Now – Recognized as one of Chicago’s top Latino leaders (2015).</p>
-      </li>
-
-      <li class="card reveal fade-up">
-        <h3 class="achv-title"><i class="fa-solid fa-trophy"></i> Entrepreneur of the Year</h3>
-        <p>Women’s Business Development Center (2015).</p>
-      </li>
-
-      <li class="card reveal fade-up">
-        <h3 class="achv-title"><i class="fa-solid fa-people-roof"></i> Family Business Achievement Award</h3>
-        <p>Smart Business Magazine – Awarded to Nova Driving School (2015).</p>
-      </li>
-
-      <li class="card reveal fade-up">
-        <h3 class="achv-title"><i class="fa-solid fa-briefcase"></i> Goldman Sachs 10,000 Small Businesses Alumna</h3>
-        <p>Completed in 2014; program supporting entrepreneurs through education, mentorship, and access to capital.</p>
-      </li>
-    </ul>
-
-    <br>
-
-    <div class="feature portrait reveal fade-up">
-      <img src="assets/mayra-portrait.jpg" alt="Mayra Khan portrait outdoors">
-      <div>
-        <h3>Leadership beyond business</h3>
-        <ul class="ticks">
-          <li>Illinois Secretary of State’s Transition Team</li>
-          <li>Board Member: Little Village Chamber of Commerce, Centro Romero, IHCC (2016–2022)</li>
-          <li>Advocate in Supplier Diversity Capacity Building with the USHCC</li>
-        </ul>
+      <div class="feature portrait reveal fade-up">
+        <img src="assets/mayra-portrait.jpg" alt="Mayra Khan portrait outdoors">
+        <div>
+          <h3>Leadership beyond business</h3>
+          <ul class="ticks">
+            <li>Illinois Secretary of State Transition Team.</li>
+            <li>Boards: LVCC, Centro Romero, IHCC.</li>
+            <li>Supplier Diversity advocate.</li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-  <!-- SERVICES -->
-  <section id="services" class="section services">
+  <!-- Gold -->
+  <section id="services" class="section services gold">
     <div class="container">
+      <div class="rule"></div>
+
+      <!-- Subtítulo + Título unificados -->
+      <p class="eyebrow">How I Help</p>
       <div class="section-head reveal fade-up">
-        <h2>Services</h2>
-        <p>Strategic guidance to scale your operations and elevate customer experience.</p>
+        <h2>SERVICES</h2>
+        <p>Clear strategy. Measurable execution.</p>
       </div>
 
       <div class="service-list">
         <article class="service reveal fade-up">
           <i class="fa-solid fa-chess-rook"></i>
           <h3>Fractional C-Suite</h3>
-          <p>Executive-level leadership without full-time commitment to accelerate execution and accountability.</p>
-          <ul class="ticks">
-            <li>Strategy & KPI cadence</li>
-            <li>Org design & hiring support</li>
-            <li>Governance rhythms</li>
-          </ul>
+          <p>Executive leadership without full-time headcount.</p>
+          <ul class="ticks"><li>KPI cadence.</li><li>Org design.</li><li>Governance.</li></ul>
         </article>
 
         <article class="service reveal fade-up">
           <i class="fa-solid fa-microphone-lines"></i>
-          <h3>Speaking & Keynotes</h3>
-          <p>Actionable talks on entrepreneurship, operational excellence, and supplier diversity.</p>
-          <ul class="ticks">
-            <li>Keynotes & panels</li>
-            <li>Moderator & fireside chats</li>
-            <li>Custom workshops</li>
-          </ul>
+          <h3>Speaking</h3>
+          <p>Actionable talks and workshops.</p>
+          <ul class="ticks"><li>Keynotes & panels.</li><li>Moderation & training.</li><li>Real cases.</li></ul>
         </article>
 
         <article class="service reveal fade-up">
           <i class="fa-solid fa-user-tie"></i>
           <h3>Executive Coaching</h3>
-          <p>One-on-one coaching focused on performance, decision-making and leadership presence.</p>
-          <ul class="ticks">
-            <li>30-60-90 focus plans</li>
-            <li>Delegation & playbooks</li>
-            <li>Customer experience leadership</li>
-          </ul>
+          <p>Decisiveness, focus, executive presence.</p>
+          <ul class="ticks"><li>30-60-90 plans.</li><li>Effective delegation.</li><li>Customer experience.</li></ul>
         </article>
 
         <article class="service reveal fade-up">
           <i class="fa-solid fa-people-group"></i>
           <h3>Group Facilitation</h3>
-          <p>High-impact sessions to align teams and unlock momentum across functions.</p>
-          <ul class="ticks">
-            <li>Ops audit & process mapping</li>
-            <li>Cross-functional alignment</li>
-            <li>Roadmaps with quick wins</li>
-          </ul>
+          <p>Alignment and momentum.</p>
+          <ul class="ticks"><li>Ops audit.</li><li>Process mapping.</li><li>Quick wins.</li></ul>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="section contact alt">
-    <div class="container grid-2">
-      <div class="reveal fade-up">
-        <h2>Contact</h2>
-        <p>Speaking, advisory, and partnership inquiries welcome.</p>
+  <!-- White (NEW) -->
+  <section id="featured" class="section alt">
+    <div class="container">
+      <div class="rule"></div>
 
-        <div class="contact-cards v2">
+      <!-- Subtítulo + Título -->
+      <p class="eyebrow">From LinkedIn</p>
+      <div class="section-head reveal fade-up">
+        <h2>FEATURED</h2>
+        <p>Highlighted posts, press, and projects.</p>
+      </div>
+
+      <!--
+        NOTA: LinkedIn bloquea extracción directa sin login.
+        Reemplaza los href/src/títulos con los de tu “Featured”.
+      -->
+      <ul class="featured-grid">
+        <li class="featured-card reveal fade-up">
+          <a class="featured-media" href="https://www.linkedin.com/in/mayra-khan/" target="_blank" rel="noopener">
+            <img src="assets/featured-1.jpg" alt="Featured item cover 1">
+          </a>
+          <div class="featured-body">
+            <h3 class="featured-title"><a href="https://www.linkedin.com/in/mayra-khan/" target="_blank" rel="noopener">Featured Item #1 — Replace title</a></h3>
+            <p class="featured-desc">Short description of the featured link or post.</p>
+          </div>
+        </li>
+
+        <li class="featured-card reveal fade-up">
+          <a class="featured-media" href="https://www.linkedin.com/in/mayra-khan/" target="_blank" rel="noopener">
+            <img src="assets/featured-2.jpg" alt="Featured item cover 2">
+          </a>
+          <div class="featured-body">
+            <h3 class="featured-title"><a href="https://www.linkedin.com/in/mayra-khan/" target="_blank" rel="noopener">Featured Item #2 — Replace title</a></h3>
+            <p class="featured-desc">Short description of the featured link or post.</p>
+          </div>
+        </li>
+
+        <li class="featured-card reveal fade-up">
+          <a class="featured-media" href="https://www.linkedin.com/in/mayra-khan/" target="_blank" rel="noopener">
+            <img src="assets/featured-3.jpg" alt="Featured item cover 3">
+          </a>
+          <div class="featured-body">
+            <h3 class="featured-title"><a href="https://www.linkedin.com/in/mayra-khan/" target="_blank" rel="noopener">Featured Item #3 — Replace title</a></h3>
+            <p class="featured-desc">Short description of the featured link or post.</p>
+          </div>
+        </li>
+      </ul>
+
+      <!-- Sugerencia opcional: badges externos
+      <div class="featured-extras">
+        <a class="badge-link" href="https://teamficient.com/" target="_blank" rel="noopener" title="Teamficient">Teamficient</a>
+      </div>
+      -->
+    </div>
+  </section>
+
+  <!-- White -->
+  <section id="contact" class="section contact alt">
+    <div class="container">
+      <div class="reveal fade-up">
+        <div class="rule"></div>
+
+        <!-- Subtítulo + Título unificados -->
+        <p class="eyebrow">Get in Touch</p>
+      <div class="section-head reveal fade-up">
+        <h2>CONTACT</h2>
+        <p>Let’s talk about your goals.</p>
+      </div>
+        
+        <div>
+            <div class="calendly-inline-widget" data-url="https://calendly.com/teamficient-mayra/consultation" style="min-width:320px;height:630px;"></div>
+            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+        </div>
+        <!--<div class="contact-cards v2">
           <a class="contact-card" href="mailto:mayra@teamficient.com">
             <div class="icon"><i class="fa-solid fa-envelope"></i></div>
-            <div class="content">
-              <h4>Email</h4>
-              <p>mayra@teamficient.com</p>
-            </div>
+            <div class="content"><h4>Email</h4><p>mayra@teamficient.com</p></div>
           </a>
-
           <a class="contact-card" href="tel:+17734741985">
             <div class="icon"><i class="fa-solid fa-phone"></i></div>
-            <div class="content">
-              <h4>Phone</h4>
-              <p>+1 (773) 474-1985</p>
-            </div>
+            <div class="content"><h4>Phone</h4><p>+1 (773) 474-1985</p></div>
           </a>
         </div>
       </div>
 
-      <!-- Form -->
-      <form class="form reveal fade-left"
-      action="https://formsubmit.co/marcel@teamficient.com"
-      method="POST">
+      <form class="form reveal fade-left" action="https://formsubmit.co/marcel@teamficient.com" method="POST">
+        <input type="text" name="_honey" class="hidden" tabindex="-1" autocomplete="off">
+        <input type="hidden" name="_subject" value="New contact from MayraKhan site">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="#contact-thanks">
+        <input type="hidden" name="_autoresponse" value="Thanks for reaching out! We received your message and will reply shortly.">
 
-  <!-- Honeypot (anti-spam): los bots lo completan; los humanos no lo ven -->
-  <input type="text" name="_honey" class="hidden" tabindex="-1" autocomplete="off">
+        <label>Full name <input required type="text" name="name" placeholder="Your name"></label>
+        <label>Email <input required type="email" name="email" placeholder="you@company.com"></label>
+        <label>Company <input type="text" name="company" placeholder="Company / Organization"></label>
+        <label>How can we help? <textarea required rows="5" name="message" placeholder="Tell us about your goals"></textarea></label>
+        <button class="btn" type="submit">Send message</button>
 
-  <!-- Configuración del envío -->
-  <input type="hidden" name="_subject" value="New contact from MayraKhan site">
-  <input type="hidden" name="_template" value="table">
-  <input type="hidden" name="_captcha" value="false">
-  <!-- Cambia el dominio por el tuyo; ancla para mostrar gracias -->
-  <input type="hidden" name="_next" value="file:///C:/Users/Marcel%20Bohórquez%20TF/Desktop/mayra-khan-site/index.html#contact-thanks">
-  <!-- Respuesta automática opcional -->
-  <input type="hidden" name="_autoresponse" value="Thanks for reaching out! We received your message and will reply shortly.">
-
-  <label>Full name
-    <input required type="text" name="name" placeholder="Your name">
-  </label>
-  <label>Email
-    <input required type="email" name="email" placeholder="you@company.com">
-  </label>
-  <label>Company
-    <input type="text" name="company" placeholder="Company / Organization">
-  </label>
-  <label>How can we help?
-    <textarea required rows="5" name="message" placeholder="Tell us about your goals"></textarea>
-  </label>
-  <button class="btn" type="submit">Send message</button>
-
-  <!-- Mensaje de “gracias” (si rediriges a #contact-thanks) -->
-  <p id="contact-thanks" class="form-success hidden">
-    Thanks! Your message was sent.
-  </p>
-</form>
-    </div>
+        <p id="contact-thanks" class="form-success hidden">Thanks! Your message was sent.</p>
+      </form>
+    </div>-->
   </section>
 
   <!--<section>
-    <!-- Calendly inline widget begin 
-<div class="calendly-inline-widget" data-url="https://calendly.com/teamficient-mayra/consultation" style="min-width:320px;height:630px;"></div>
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-<!-- Calendly inline widget end 
-
+    <div class="calendly-inline-widget" data-url="https://calendly.com/teamficient-mayra/consultation" style="min-width:320px;height:630px;"></div>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
   </section>-->
 </main>
 
