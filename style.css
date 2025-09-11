@@ -44,6 +44,59 @@
   --speed-2:.2s;
   --speed-3:.8s;
 }
+/* Tamaño base del logo + animaciones */
+.logo{
+  height: 100px;            /* ajusta si lo quieres un poco más grande/pequeño */
+  width: auto;
+  display: block;
+  transition: transform var(--speed-3) var(--easing), opacity var(--speed-3) var(--easing);
+  will-change: transform, opacity;
+}
+
+/* La barra superior (logo) ahora se colapsa con transición en lugar de ocultarse de golpe */
+.topbar{
+  display:flex; align-items:center; justify-content:center; position:relative;
+  overflow: hidden;                 /* permite colapsar sin saltos visuales */
+  max-height: 110px;                /* ≈ alto del logo + padding */
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    max-height .35s var(--easing),
+    opacity    .35s var(--easing),
+    transform  .35s var(--easing);
+  will-change: max-height, opacity, transform;
+}
+
+/* Al scrollear: colapsa y desvanece la barra del logo, y mini “slide up” */
+.header.scrolled .topbar{
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-8px);
+}
+
+/* Compacta la franja del menú con transición suave */
+.header-inner{
+  display:grid; grid-template-rows:auto auto; row-gap:var(--space-1);
+  padding: 12px 0;
+  transition: padding .35s var(--easing), row-gap .35s var(--easing);
+}
+.header.scrolled .header-inner{
+  padding: 6px 0;
+  row-gap: 0;
+}
+
+/* Sombra sutil cuando el header está “pegado” */
+.header.scrolled{
+  border-bottom: 1px solid rgba(255,255,255,.10);
+  box-shadow: 0 6px 16px rgba(0,0,0,.18);
+}
+
+/* Responsive */
+@media (max-width: 700px){
+  .logo{ height: 80px; }
+  .topbar{ max-height: 86px; }
+}
+
 
 /* =========================================================
    BASE
@@ -475,3 +528,64 @@ input:focus,textarea:focus{outline:2px solid var(--gold); border-color:var(--gol
 .section.gold .service i{
   color: var(--near-black);
 }
+
+
+/* ===== Custom media placements ===== */
+.services-media{
+  margin-top: 10px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.services-media img{width:100%; height:360px; object-fit:cover}
+
+.contact-media{
+  margin: 8px 0 16px;
+  border-radius: var(--radius);
+  overflow:hidden;
+  box-shadow: var(--shadow);
+}
+.contact-media img{width:100%; height:300px; object-fit:cover}
+
+/* ===== Footer Dark ===== */
+.footer-dark{
+  background: var(--black);
+  color: var(--white);
+  border-top: 0;
+  padding-top: 44px;
+}
+.footer-dark .brand{color:#fff}
+.footer-grid{
+  display:grid;
+  grid-template-columns: 1.2fr .8fr .8fr;
+  gap: 28px;
+  align-items:start;
+}
+.f-brand .f-tag{color:#ccc; margin:8px 0 12px}
+.f-social{display:flex; gap:12px; font-size:20px}
+.f-links, .f-contact{display:flex; flex-direction:column; gap:8px}
+.f-links h4, .f-contact h4{margin:0 0 6px; color:#fff; font-family:Inter, system-ui, sans-serif}
+.f-links a{color:#ddd}
+.f-links a:hover{color:#fff}
+.f-contact p{margin:0; color:#ddd}
+.f-bottom{
+  display:flex; align-items:center; justify-content:space-between;
+  padding:16px 0 24px; border-top:1px solid rgba(255,255,255,.12); margin-top:16px;
+}
+.footer-dark .to-top{border-color:rgba(255,255,255,.18); color:#fff}
+@media (max-width:900px){
+  .footer-grid{grid-template-columns:1fr}
+  .services-media img{height:240px}
+  .contact-media img{height:220px}
+}
+/* Links de contacto en footer: mismo tono que el texto, con hover sutil */
+.f-contact a{
+  color: #ddd;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.f-contact a:hover{
+  color: #fff;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+
